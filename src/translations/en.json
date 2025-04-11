@@ -1,0 +1,207 @@
+{
+  "hero": {
+    "title": "Tire Specialist",
+    "subtitle": "Service available 24/7 for all vehicle types",
+    "callButton": "Call: 07 44 47 44 44",
+    "dimensionsButton": "Our sizes",
+    "selectionButton": "Our selection",
+    "emergencyTitle": "Emergency number",
+    "callNowButton": "Call now",
+    "closeButton": "Close"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Discover our quality services",
+    "learnMore": "Learn more",
+    "close": "Close",
+    "items": {
+      "1": {
+        "title": "Guaranteed Quality",
+        "description": "All our tires are carefully selected from the best brands on the market.",
+        "details": "At Dépannage Pneus 06, we never compromise on quality. All our tires come from reputable manufacturers such as Michelin, Bridgestone, Continental, Pirelli and other premium brands. We check each product to ensure it meets our high standards before offering it to our customers. Our commitment to quality means you can have peace of mind knowing your new tires are safe, durable and high-performing."
+      },
+      "2": {
+        "title": "Fast Delivery",
+        "description": "Delivery within 48 hours for all products available in stock.",
+        "details": "Our fast delivery service ensures that your tires arrive within a maximum of 48 hours for all in-stock products. We understand that time is precious, especially when it comes to replacing worn or damaged tires. Our efficient logistics network covers the entire Alpes-Maritimes department, with express delivery options available for emergency situations. We keep you informed of the status of your order at every step of the process."
+      },
+      "3": {
+        "title": "Quick Service",
+        "description": "Our qualified technicians ensure quick and efficient installation of your tires.",
+        "details": "Our team of certified technicians works with precision and efficiency to save you time. We know your vehicle is essential to your daily life, which is why we strive to minimize waiting times. For most standard services, we guarantee an execution time of less than 30 minutes. Our technicians are trained in the latest techniques and technologies, allowing them to perform mounting and balancing with great speed while maintaining impeccable quality."
+      },
+      "4": {
+        "title": "Professional Installation",
+        "description": "Balancing and mounting performed with state-of-the-art equipment by our experts.",
+        "details": "Our professional installation service is performed by experienced technicians using state-of-the-art equipment. We perform precise mounting and perfect balancing of your tires to ensure optimal road handling and uniform wear. Our computerized balancing machines detect even the smallest imbalances that could affect driving comfort. After each installation, we perform a complete check and precisely adjust the tire pressure according to the manufacturer's recommendations."
+      },
+      "5": {
+        "title": "Full Warranty",
+        "description": "All our products and services are covered by manufacturer's warranty.",
+        "details": "We offer a full warranty on all our products and services. Our tires are covered by the manufacturer's warranty against manufacturing defects, typically for a period of 5 to 6 years from the date of purchase. Additionally, our own service warranty protects you for 30 days after installation. If you encounter a problem related to our work during this period, we will correct it free of charge. For certain premium tires, we also offer a road hazard warranty that covers repairs or replacements in case of puncture or accidental damage."
+      },
+      "6": {
+        "title": "Competitive Prices",
+        "description": "We offer you the best prices thanks to our partnerships with major manufacturers.",
+        "details": "Our competitive pricing policy is made possible through our direct relationships with tire manufacturers and distributors. As a preferred partner of major brands, we benefit from preferential rates that we pass on to our customers. We regularly monitor the market to ensure our prices remain among the most attractive in the region. If you find a lower price for an identical product, we strive to match or beat it. We also offer seasonal deals and special promotions throughout the year."
+      }
+    }
+  },
+  "pneusDetails": {
+    "title": "Our Tires and Services",
+    "description": "At Dépannage Pneus 06, we offer a wide range of tires for all types of vehicles, from passenger cars to commercial vehicles. We carefully select each tire to offer you excellent value for money.",
+    "tabs": {
+      "presentation": "Presentation",
+      "products": "Our Selection",
+      "dimensions": "Dimensions",
+      "services": "Services"
+    },
+    "categories": {
+      "all": "All",
+      "summer": "Summer Tires",
+      "winter": "Winter Tires",
+      "allSeason": "All Season Tires",
+      "suv": "SUV/4x4"
+    },
+    "products": {
+      "michelin": {
+        "name": "Michelin Primacy 4",
+        "description": "Excellence in road holding and longevity. Optimal performance on dry and wet surfaces."
+      },
+      "bridgestone": {
+        "name": "Bridgestone Blizzak LM005",
+        "description": "Exceptional grip on snow and ice. Comfort and safety in winter conditions."
+      },
+      "continental": {
+        "name": "Continental AllSeasonContact",
+        "description": "Balanced performance all year round. Ideal for temperate and variable climates."
+      },
+      "pirelli": {
+        "name": "Pirelli Scorpion Verde",
+        "description": "Specially designed for SUVs and 4x4s. Combining performance and environmental respect."
+      },
+      "goodyear": {
+        "name": "Goodyear Vector 4Seasons Gen-3",
+        "description": "Innovative technology for all seasons. Consistent performance throughout the year."
+      },
+      "hankook": {
+        "name": "Hankook Ventus Prime3",
+        "description": "Excellent value for money. Driving comfort and low noise level."
+      }
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "page": "Page",
+      "of": "of"
+    },
+    "product": {
+      "price": "Price",
+      "currency": "€",
+      "viewDetails": "View details",
+      "addToCart": "Add to cart",
+      "notAvailable": "Not available",
+      "loading": "Loading..."
+    },
+    "tireSizes": {
+      "passenger": {
+        "title": "Passenger vehicles"
+      },
+      "suv": {
+        "title": "SUV and 4x4"
+      },
+      "commercial": {
+        "title": "Commercial vehicles"
+      }
+    },
+    "services": {
+      "mounting": {
+        "title": "Mounting & Balancing",
+        "description": "Our team performs precise mounting and balancing of your tires, ensuring driving comfort and optimal safety."
+      },
+      "alignment": {
+        "title": "Wheel Alignment",
+        "description": "Precise adjustment of your wheels' geometry for perfect road handling and uniform tire wear."
+      },
+      "mobile": {
+        "title": "Mobile Service",
+        "description": "Our team comes to your home or workplace to change your tires with our fully equipped mobile workshop."
+      },
+      "emergency": {
+        "title": "24/7 Assistance",
+        "description": "Flat tire in the middle of the night? Our emergency service is available 24/7 to help you quickly."
+      }
+    },
+    "servicesSection": {
+      "title": "Our Professional Services"
+    },
+    "dimensions": {
+      "title": "Available Dimensions",
+      "description": "We have a large stock of tires in all standard dimensions. If you can't find your size, don't hesitate to contact us for a special order.",
+      "emergencyService": "Emergency service: 07 44 47 44 44"
+    },
+    "presentation": {
+      "title": "Tire specialist for 15 years",
+      "paragraph1": "At Dépannage Pneus 06, we are passionate about your safety on the road. Our team of qualified professionals is committed to providing you with the best tire services in the region.",
+      "paragraph2": "Whether you need summer, winter or all-season tires, we have what you need. Our expertise extends from passenger vehicles to commercial vehicles, including SUVs and 4x4s.",
+      "paragraph3": "We work with the biggest brands on the market to offer you a wide choice of tires adapted to all budgets and all needs.",
+      "rating": "4.9/5 - 500+ customer reviews",
+      "phoneAction": "Contact us",
+      "imageAlt": "Dépannage Pneus 06 tire workshop"
+    },
+    "modal": {
+      "characteristics": "Characteristics",
+      "category": "Category",
+      "brand": "Brand",
+      "model": "Model",
+      "description": "Description",
+      "availableSizes": "Available sizes",
+      "contactUs": "Contact us"
+    }
+  },
+  "footer": {
+    "about": "About",
+    "aboutDescription": "Dépannage Pneus 06 is your tire specialist in Nice. We offer a 24/7 mobile service for all types of vehicles.",
+    "quickLinks": "Quick links",
+    "ourProducts": "Our products",
+    "availableDimensions": "Available dimensions",
+    "contact": "Contact",
+    "ourServices": "Our services",
+    "tireSales": "Tire sales",
+    "homeMounting": "Home mounting",
+    "repair": "Repair",
+    "balancing": "Balancing",
+    "emergencyService": "Emergency service",
+    "serviceAvailable": "Service available 24/7",
+    "mobileService": "Mobile service throughout the department",
+    "scrollToTop": "Scroll to top",
+    "copyright": "Dépannage Pneus 06. All rights reserved."
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Need help or information about our services? Don't hesitate to contact us!",
+    "infoTitle": "Contact information",
+    "phone": "Phone",
+    "available247": "Available 24/7",
+    "instantMessaging": "Instant messaging",
+    "location": "Location",
+    "mobileService": "Mobile service throughout the department",
+    "emailResponseTime": "Response within 24h",
+    "mapTitle": "Map of Nice"
+  },
+  "navbar": {
+    "home": "Home",
+    "ourTires": "Our Tires",
+    "servicesAndDimensions": "Services & Dimensions",
+    "followUs": "Follow us",
+    "lightMode": "Switch to light mode",
+    "darkMode": "Switch to dark mode",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mobileMenu": {
+      "language": "Language",
+      "darkMode": "Dark Mode",
+      "lightMode": "Light Mode"
+    }
+  }
+} 

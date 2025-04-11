@@ -1,0 +1,1035 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import des variables et styles communs */
+@import url("../styles/variables.css");
+
+/* Import des thèmes */
+@import url("../styles/darkTheme.css");
+@import url("../styles/lightTheme.css");
+
+/* Import des styles i18n */
+@import url("../styles/i18n.css");
+
+@layer components {
+  .feature-card {
+    @apply bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 p-8;
+  }
+
+  .feature-icon-container {
+    @apply mb-5 bg-red-50 dark:bg-red-900/20 w-16 h-16 rounded-full flex items-center justify-center;
+  }
+
+  .feature-icon {
+    @apply w-10 h-10 text-accent-red;
+  }
+
+  .feature-title {
+    @apply text-xl font-bold text-black dark:text-white mb-3;
+  }
+
+  .feature-description {
+    @apply text-black dark:text-gray-300;
+  }
+
+  .feature-header {
+    @apply bg-gray-200 dark:bg-gray-800 px-8 py-4 rounded-lg shadow-md transform transition-all duration-300;
+  }
+
+  .feature-header-title {
+    @apply text-3xl md:text-4xl font-bold text-black dark:text-white mb-0;
+  }
+
+  .feature-header-line {
+    @apply h-1 w-24 bg-accent-red mx-auto mt-2 rounded-full;
+  }
+
+  .feature-header-icon {
+    @apply absolute -right-6 -bottom-6 w-16 h-16 rounded-full bg-red-500 hidden sm:flex items-center justify-center text-white;
+  }
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary-color: #2563eb; /* blue-600 */
+  --secondary-color: #f3f4f6; /* gray-100 */
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --z-index-navbar: 9999;
+  
+  /* Variables pour la navbar */
+  --navbar-bg-dark: linear-gradient(to right, #0f172a, #1e293b);
+  --navbar-bg-light: linear-gradient(to right, #f1f5f9, #e2e8f0);
+  --navbar-text-dark: #ffffff;
+  --navbar-text-light: #0f172a;
+  
+  /* Variables pour les dégradés */
+  --gradient-dark-primary: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  --gradient-dark-secondary: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+  --gradient-dark-accent: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  
+  --gradient-light-primary: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  --gradient-light-secondary: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+  --gradient-light-accent: linear-gradient(135deg, #2563eb 0%, #60a5fa 100%);
+  
+  /* Design élégant - Nouveaux dégradés */
+  --gradient-elegant-blue-dark: linear-gradient(135deg, #0a192f 0%, #172a46 100%);
+  --gradient-elegant-blue-navy: linear-gradient(135deg, #112240 0%, #1a365d 100%);
+  --gradient-elegant-blue-accent: linear-gradient(135deg, #3562e0 0%, #1e4bd2 80%, #1a41b8 100%);
+  --gradient-elegant-blue-glow: linear-gradient(135deg, #1e4bd2 0%, #3a72ff 50%, #5d8dff 100%);
+  --gradient-elegant-green: linear-gradient(135deg, #06b6d4 0%, #0ea5e9 50%, #0284c7 100%);
+  --gradient-elegant-glass: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
+  
+  /* Nouveaux dégradés modernes bleu foncé et noir */
+  --gradient-modern-dark-blue: linear-gradient(135deg, #050c1c 0%, #0c1f3e 50%, #081529 100%);
+  --gradient-modern-navy-black: linear-gradient(135deg, #020812 0%, #081020 50%, #010306 100%);
+  --gradient-modern-blue-black: linear-gradient(180deg, #081529 0%, #020408 100%);
+  --gradient-modern-selection: linear-gradient(90deg, #030b1b 0%, #071a36 50%, #030b1b 100%);
+  
+  /* Nouveaux dégradés rouge moderne */
+  --gradient-modern-red: linear-gradient(135deg, #450a0a 0%, #7f1d1d 50%, #991b1b 100%);
+  --gradient-modern-red-black: linear-gradient(180deg, #450a0a 0%, #200505 100%);
+  --gradient-modern-red-light: linear-gradient(135deg, #fee2e2 0%, #fecaca 50%, #fca5a5 100%);
+  
+  /* Design élégant - Couleurs */
+  --color-elegant-blue-darkest: #0a192f;
+  --color-elegant-blue-dark: #112240;
+  --color-elegant-blue-medium: #1a365d;
+  --color-elegant-blue-light: #3a72ff;
+  --color-elegant-blue-lightest: #5d8dff;
+  --color-elegant-text-primary: #ffffff;
+  --color-elegant-text-secondary: #e2e8f0;
+  --color-elegant-accent: #64ffda;
+  --color-elegant-border: rgba(66, 153, 225, 0.3);
+  --color-glass-highlight: rgba(255, 255, 255, 0.1);
+  --color-glass-border: rgba(255, 255, 255, 0.05);
+  
+  /* Couleurs de l'accent rouge */
+  --color-accent-red: #dc2626; /* red-600 */
+  --color-accent-red-light: #ef4444; /* red-500 */
+  --color-accent-red-dark: #b91c1c; /* red-700 */
+  
+  /* Nouveaux dégradés plus modernes */
+  --gradient-dark-blue-black: linear-gradient(135deg, #0c1d46 0%, #0d1321 100%);
+  --gradient-dark-blue-deep: linear-gradient(135deg, #1e3a8a 0%, #172554 100%);
+  --gradient-dark-blue-accent: linear-gradient(135deg, #2563eb 0%, #1d4ed8 80%, #1e40af 100%);
+  --gradient-dark-blue-glow: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+  
+  /* Variables pour les border-radius */
+  --radius-sm: 0.375rem;    /* 6px */
+  --radius-md: 0.5rem;      /* 8px */
+  --radius-lg: 0.75rem;     /* 12px */
+  --radius-xl: 1rem;        /* 16px */
+  --radius-2xl: 1.5rem;     /* 24px */
+  --radius-full: 9999px;    /* full rounded */
+  --radius-card: 0.75rem;   /* pour les cartes */
+  --radius-button: 9999px;  /* pour les boutons */
+  
+  /* Variables pour les effets verre */
+  --glass-bg: rgba(10, 25, 47, 0.7);
+  --glass-border: rgba(66, 153, 225, 0.2);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+  --glass-blur: 6px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  color: rgb(var(--foreground-rgb));
+  font-family: var(--font-sans), sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* Navbar styles to ensure visibility */
+nav {
+  z-index: var(--z-index-navbar);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+/* Swiper custom styles */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--primary-color);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+}
+
+/* Thème sombre (par défaut) */
+.dark-theme {
+  --bg-primary: #0a192f;
+  --bg-secondary: #112240;
+  --bg-tertiary: #1a365d;
+  --text-primary: #ffffff;
+  --text-secondary: #e2e8f0;
+  --text-tertiary: #cbd5e1;
+  --border-color: rgba(66, 153, 225, 0.3);
+  --accent-blue: #3a72ff;
+  --accent-green: #64ffda;
+  
+  /* Variables navbar */
+  --navbar-bg: var(--gradient-elegant-blue-dark);
+  --navbar-text: var(--color-elegant-text-primary);
+}
+
+/* Thème clair */
+.light-theme {
+  --bg-primary: #f0fdf4;
+  --bg-secondary: #dcfce7;
+  --bg-tertiary: #bbf7d0;
+  --text-primary: #064e3b;
+  --text-secondary: #065f46;
+  --text-tertiary: #047857;
+  --border-color: #6ee7b7;
+  --accent-blue: #10b981;
+  --accent-green: #059669;
+  
+  /* Conservation du style sombre pour navbar */
+  --navbar-bg: var(--gradient-elegant-blue-dark);
+  --navbar-text: var(--color-elegant-text-primary);
+  
+  /* Dégradés verts pour mode clair */
+  --gradient-light-primary: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  --gradient-light-secondary: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  --gradient-light-accent: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  
+  /* Nouvelle palette verte et blanche */
+  --modern-light-primary: #f0fdf4;
+  --modern-light-secondary: #dcfce7;
+  --modern-light-tertiary: #bbf7d0;
+  --modern-light-accent: #10b981;
+  --modern-light-accent-dark: #059669;
+  --modern-light-accent-light: #34d399;
+  --modern-light-border: #6ee7b7;
+  --modern-light-bg-card: rgba(240, 253, 244, 0.7);
+  --modern-light-bg-card-hover: rgba(220, 252, 231, 0.85);
+  --modern-light-text: #064e3b;
+  --modern-light-text-secondary: #065f46;
+  --modern-light-text-tertiary: #047857;
+  --modern-light-card-shadow: 0 8px 20px -4px rgba(5, 150, 105, 0.15);
+  
+  /* Nouveaux dégradés verts pour le Hero */
+  --gradient-hero-green-white: linear-gradient(135deg, #ffffff 0%, #f0fdf4 50%, #dcfce7 100%);
+  --gradient-hero-accents: linear-gradient(135deg, #14b8a6 0%, #0d9488 50%, #0f766e 100%);
+  --gradient-hero-buttons: linear-gradient(to right, #0d9488, #0f766e);
+  --gradient-hero-buttons-hover: linear-gradient(to right, #0f766e, #0d9488);
+  
+  /* Nouvelles couleurs teal/vert différentes */
+  --hero-light-accent: #14b8a6;       /* teal-500 */
+  --hero-light-accent-dark: #0d9488;  /* teal-600 */
+  --hero-light-border: #2dd4bf;       /* teal-400 */
+  --hero-light-text: #134e4a;         /* teal-900 */
+  --hero-light-bg: #f0fdfa;           /* teal-50 */
+  
+  /* Variables pour la navbar en vert foncé */
+  --navbar-green-dark: linear-gradient(180deg, #064e3b, #065f46);
+  --navbar-green-border: rgba(16, 185, 129, 0.25);
+  --navbar-green-shadow: 0 4px 20px rgba(6, 78, 59, 0.4);
+}
+
+/* Variables CSS utilisées pour la transition des thèmes */
+.dark-theme main {
+  background: var(--gradient-modern-selection);
+  color: var(--text-primary);
+}
+
+.light-theme main {
+  background: var(--gradient-light-primary);
+  color: var(--text-primary);
+}
+
+.light-theme .bg-dark-800 {
+  background: var(--gradient-light-secondary);
+}
+
+.light-theme .bg-dark-700 {
+  background: var(--gradient-light-secondary);
+}
+
+.dark-theme .bg-dark-800 {
+  background: var(--gradient-modern-dark-blue);
+}
+
+.dark-theme .bg-dark-700 {
+  background: var(--gradient-modern-navy-black);
+}
+
+.light-theme .bg-dark-900 {
+  background: var(--gradient-light-primary);
+}
+
+.dark-theme .bg-dark-900 {
+  background: var(--gradient-modern-blue-black);
+}
+
+.light-theme .bg-dark-950 {
+  background: var(--gradient-light-secondary);
+}
+
+.dark-theme .bg-dark-950 {
+  background: var(--gradient-modern-selection);
+}
+
+/* Fond général du site */
+.dark-theme body {
+  background: var(--gradient-modern-blue-black);
+  color: var(--text-primary);
+}
+
+.dark-theme .modern-body {
+  background: linear-gradient(180deg, var(--gradient-modern-dark-blue), var(--gradient-modern-blue-black));
+  background-attachment: fixed;
+  position: relative;
+}
+
+.dark-theme .modern-body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at top, rgba(30, 64, 175, 0.1), transparent 60%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.dark-theme .modern-body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: linear-gradient(0deg, var(--gradient-modern-navy-black), transparent);
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.light-theme .text-white {
+  color: var(--modern-light-text);
+}
+
+.light-theme .text-gray-300 {
+  color: var(--modern-light-text-secondary);
+}
+
+.light-theme .border-dark-600, 
+.light-theme .border-dark-800 {
+  border-color: var(--border-color);
+}
+
+.light-theme .bg-accent-blue {
+  background: var(--gradient-light-accent);
+}
+
+.dark-theme .bg-accent-blue {
+  background: var(--gradient-elegant-blue-accent);
+}
+
+.light-theme .bg-accent-green {
+  background-color: var(--accent-green);
+}
+
+.light-theme .text-accent-blue {
+  color: var(--accent-blue);
+}
+
+.dark-theme .text-accent-blue {
+  background: var(--gradient-elegant-blue-glow);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+.dark-theme .text-accent-red {
+  color: #ef4444;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(153, 27, 27, 0.3);
+}
+
+.light-theme .shadow-xl {
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.05);
+}
+
+.dark-theme .shadow-xl {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+}
+
+/* Styles spécifiques pour la barre de navigation - Force style vert foncé pour navbar */
+.light-theme .bg-dark-800,
+.light-theme .bg-dark-800\/95,
+.light-theme .bg-dark-800\/80 {
+  background: var(--gradient-light-primary);
+  backdrop-filter: blur(var(--glass-blur));
+}
+
+.light-theme nav .text-white,
+.light-theme nav .text-white\/90 {
+  color: var(--modern-light-text);
+}
+
+.light-theme nav .text-gray-300 {
+  color: var(--modern-light-text-secondary);
+}
+
+/* Style du menu burger en vert */
+.light-theme .mobile-menu {
+  background: var(--gradient-light-primary);
+  border: 1px solid var(--modern-light-border);
+  box-shadow: var(--modern-light-card-shadow);
+}
+
+.light-theme .mobile-menu-item {
+  background: rgba(236, 253, 245, 0.7);
+  margin-bottom: 0.5rem;
+  border-radius: 0.375rem;
+  border-left: 2px solid rgba(16, 185, 129, 0.3);
+  transition: all 0.2s ease;
+}
+
+.light-theme .mobile-menu-item:hover {
+  background: rgba(209, 250, 229, 0.7);
+  border-left: 2px solid rgba(16, 185, 129, 0.8);
+  transform: translateX(3px);
+}
+
+/* Force navbar transparente en mode clair */
+.light-theme nav {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.light-theme .bg-gradient-navbar {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(16, 185, 129, 0.15);
+  box-shadow: none !important;
+}
+
+/* Mode clair pour le reste du site */
+.light-theme main {
+  background: var(--gradient-light-primary);
+  color: var(--text-primary);
+}
+
+.light-theme body {
+  background: var(--gradient-light-primary);
+  color: var(--text-primary);
+}
+
+.light-theme section:not(.navbar) {
+  background-color: transparent;
+}
+
+.light-theme .hero-section {
+  position: relative;
+  background: transparent;
+}
+
+.light-theme .hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 253, 244, 0.85), rgba(209, 250, 229, 0.9));
+  z-index: 0;
+}
+
+.light-theme .hero-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to top, rgba(240, 253, 250, 0.6), transparent);
+  z-index: 0;
+}
+
+/* Contenu du Hero en mode clair */
+.light-theme .hero-section > div {
+  position: relative;
+  z-index: 1;
+}
+
+/* Texte rouge dans le Hero */
+.light-theme .hero-section .text-accent-red {
+  color: var(--hero-light-accent-dark);
+  font-weight: bold;
+}
+
+/* Boutons dans le Hero */
+.light-theme .hero-section .hero-buttons {
+  background: var(--gradient-hero-buttons);
+  border: 1px solid var(--hero-light-border);
+  color: white;
+  text-shadow: none;
+}
+
+.light-theme .hero-section .hero-buttons:hover {
+  background: var(--gradient-hero-buttons-hover);
+  border-color: var(--hero-light-accent-dark);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.2);
+}
+
+/* Override pour le bouton d'appel dans le Hero */
+.light-theme .hero-section a button {
+  background: var(--hero-light-accent-dark);
+  color: white;
+  border: none;
+}
+
+.light-theme .hero-section a button:hover {
+  background: var(--hero-light-accent);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.2);
+}
+
+/* Texte dans le Hero */
+.light-theme .hero-section h1,
+.light-theme .hero-section h2,
+.light-theme .hero-section h3 {
+  color: var(--hero-light-text);
+}
+
+.light-theme .hero-section p {
+  color: var(--hero-light-text);
+  opacity: 0.9;
+}
+
+/* Service disponible texte */
+.light-theme .hero-section .service-available {
+  color: var(--hero-light-accent-dark);
+  font-weight: 600;
+  background: linear-gradient(90deg, var(--hero-light-accent), var(--hero-light-accent-dark));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Sections du site en mode clair */
+.light-theme .bg-dark-900 {
+  background: var(--gradient-light-primary);
+}
+
+.light-theme .bg-dark-950 {
+  background: var(--gradient-light-secondary);
+}
+
+.light-theme .bg-dark-700 {
+  background: var(--gradient-light-secondary);
+}
+
+/* Cartes et conteneurs en mode clair */
+.light-theme .glass-card,
+.light-theme .glass-effect,
+.light-theme .modern-dark-container,
+.light-theme .modern-dark-card {
+  background: var(--modern-light-bg-card);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--modern-light-border);
+  box-shadow: var(--modern-light-card-shadow);
+}
+
+.light-theme .glass-card::before,
+.light-theme .modern-dark-container::before,
+.light-theme .modern-dark-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--modern-light-border), transparent);
+}
+
+.light-theme .modern-dark-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(16, 185, 129, 0.05), rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.05));
+  border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+}
+
+/* Textes en mode clair */
+.light-theme .text-white {
+  color: var(--modern-light-text);
+}
+
+.light-theme .text-gray-300 {
+  color: var(--modern-light-text-secondary);
+}
+
+.light-theme .text-accent-blue:not(nav .text-accent-blue):not(.navbar-logo .text-accent-blue) {
+  color: var(--modern-light-accent);
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  font-weight: 600;
+}
+
+.light-theme .text-accent-red {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+/* Cards, testimonials et features en mode clair */
+.light-theme .feature-card,
+.light-theme .feature-header {
+  background: var(--modern-light-bg-card);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  box-shadow: var(--modern-light-card-shadow);
+}
+
+.light-theme .feature-icon-container {
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+.light-theme .feature-icon {
+  color: var(--modern-light-accent-dark);
+}
+
+.light-theme .feature-title {
+  color: var(--modern-light-text);
+}
+
+.light-theme .feature-description {
+  color: var(--modern-light-text-secondary);
+}
+
+.light-theme .testimonial-card {
+  background: var(--modern-light-bg-card);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  box-shadow: var(--modern-light-card-shadow);
+}
+
+/* Boutons en mode clair */
+.light-theme button:not(nav button):not(.mobile-menu button) {
+  background: var(--gradient-light-accent);
+  color: white;
+  border-color: var(--modern-light-accent-dark);
+}
+
+.light-theme button:not(nav button):not(.mobile-menu button):hover {
+  background: linear-gradient(to right, var(--modern-light-accent-dark), var(--modern-light-accent));
+  border-color: var(--modern-light-accent);
+}
+
+.light-theme .btn-primary {
+  background: var(--gradient-light-accent);
+  color: white;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+  border: none;
+}
+
+.light-theme .btn-primary:hover {
+  background: linear-gradient(to right, var(--modern-light-accent-dark), var(--modern-light-accent));
+}
+
+/* Onglets et sélecteurs en mode clair */
+.light-theme .tab-button {
+  background: var(--modern-light-secondary);
+  color: var(--modern-light-text-secondary);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+}
+
+.light-theme .tab-button.active {
+  background: var(--modern-light-accent);
+  color: white;
+  border-color: var(--modern-light-accent-dark);
+}
+
+.light-theme .tab-button:hover:not(.active) {
+  background: var(--modern-light-tertiary);
+}
+
+/* Formulaires en mode clair */
+.light-theme input,
+.light-theme textarea,
+.light-theme select {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--modern-light-border);
+  color: var(--modern-light-text);
+}
+
+.light-theme input:focus,
+.light-theme textarea:focus,
+.light-theme select:focus {
+  border-color: var(--modern-light-accent);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+/* Footer en mode clair */
+.light-theme footer {
+  background: var(--gradient-light-secondary);
+  color: var(--modern-light-text);
+}
+
+.light-theme .footer-red {
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  border-top: 1px solid rgba(16, 185, 129, 0.2);
+  box-shadow: 0 -10px 30px -15px rgba(16, 185, 129, 0.15);
+}
+
+/* Force le texte du logo en vert et blanc */
+.light-theme .navbar-logo .text-accent-blue,
+.light-theme nav .text-accent-blue,
+.light-theme nav a .text-accent-blue {
+  background: linear-gradient(135deg, #10b981, #34d399, #6ee7b7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+.light-theme .mobile-menu,
+.light-theme .mobile-menu * {
+  color: var(--navbar-text-dark);
+}
+
+/* Styles spécifiques pour les produits en mode clair */
+.light-theme .product-card {
+  background: var(--modern-light-bg-card);
+  border: 1px solid var(--modern-light-border);
+  box-shadow: var(--modern-light-card-shadow);
+}
+
+.light-theme .product-card:hover {
+  box-shadow: 0 12px 25px -5px rgba(5, 150, 105, 0.25);
+  transform: translateY(-2px);
+}
+
+.light-theme .product-title {
+  color: var(--modern-light-text);
+}
+
+.light-theme .product-price {
+  color: var(--modern-light-accent);
+}
+
+.light-theme .product-description {
+  color: var(--modern-light-text-secondary);
+}
+
+/* Styles pour les sections avec fond */
+.light-theme .bg-dark-800,
+.light-theme .bg-dark-700,
+.light-theme .bg-dark-900,
+.light-theme .bg-dark-950 {
+  position: relative;
+}
+
+.light-theme .bg-dark-800::before,
+.light-theme .bg-dark-700::before,
+.light-theme .bg-dark-900::before,
+.light-theme .bg-dark-950::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--modern-light-border), transparent);
+  pointer-events: none;
+}
+
+/* Améliorer le contraste et la lisibilité */
+.light-theme h1, .light-theme h2, .light-theme h3,
+.light-theme h4, .light-theme h5, .light-theme h6 {
+  color: var(--modern-light-text);
+}
+
+.light-theme p {
+  color: var(--modern-light-text-secondary);
+}
+
+.light-theme .section-title {
+  color: var(--modern-light-text);
+  font-weight: 700;
+}
+
+.light-theme .section-subtitle {
+  color: var(--modern-light-accent);
+  font-weight: 600;
+}
+
+/* Correction pour la page product */
+.light-theme .contact-form input,
+.light-theme .contact-form textarea,
+.light-theme .contact-form select {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--modern-light-border);
+  color: var(--modern-light-text);
+}
+
+.light-theme .contact-form input:focus,
+.light-theme .contact-form textarea:focus,
+.light-theme .contact-form select:focus {
+  border-color: var(--modern-light-accent);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+.light-theme .contact-form label {
+  color: var(--modern-light-text);
+}
+
+.light-theme .contact-info {
+  background: var(--modern-light-bg-card);
+  border: 1px solid var(--modern-light-border);
+  box-shadow: var(--modern-light-card-shadow);
+}
+
+/* Améliorer l'apparence des liens */
+.light-theme a:not(nav a) {
+  color: var(--modern-light-accent-dark);
+  transition: color 0.3s ease;
+}
+
+.light-theme a:not(nav a):hover {
+  color: var(--modern-light-accent);
+}
+
+/* Background du Hero en mode clair */
+.light-theme .hero-gradient {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(236, 253, 245, 0.9), rgba(209, 250, 229, 0.95));
+  opacity: 1;
+}
+
+.light-theme .hero-pattern {
+  opacity: 0.03;
+  mix-blend-mode: multiply;
+}
+
+.light-theme .hero-pattern::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 L55 20 L55 50 L30 65 L5 50 L5 20 Z' stroke='%23064e3b' fill='none' /%3E%3C/svg%3E");
+  background-size: 60px 60px;
+  opacity: 0.05;
+}
+
+/* Effets lumineux pour le fond du Hero en mode clair */
+.light-theme .hero-lights {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.light-theme .hero-light-1 {
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.15), transparent);
+  width: 50%;
+  height: 50%;
+  top: -10%;
+  left: -10%;
+  border-radius: 100%;
+  filter: blur(80px);
+}
+
+.light-theme .hero-light-2 {
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.15), transparent);
+  width: 30%;
+  height: 30%;
+  top: 30%;
+  left: 10%;
+  border-radius: 100%;
+  filter: blur(90px);
+}
+
+.light-theme .hero-light-3 {
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.1), transparent);
+  width: 40%;
+  height: 40%;
+  top: 60%;
+  right: -10%;
+  border-radius: 100%;
+  filter: blur(100px);
+}
+
+.light-theme .hero-light-4 {
+  background: radial-gradient(circle, rgba(45, 212, 191, 0.1), transparent);
+  width: 35%;
+  height: 35%;
+  top: 5%;
+  right: 5%;
+  border-radius: 100%;
+  filter: blur(110px);
+}
+
+.light-theme .hero-light-5 {
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.1), transparent);
+  width: 30%;
+  height: 20%;
+  top: 50%;
+  left: 20%;
+  border-radius: 100%;
+  filter: blur(100px);
+}
+
+/* Titre du Hero en mode clair */
+.light-theme .hero-title {
+  background: linear-gradient(135deg, #059669, #10b981, #34d399);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 2px 10px rgba(5, 150, 105, 0.1);
+}
+
+/* Styles pour le toggle du menu burger en noir moderne */
+.light-theme .menu-toggle-button,
+.light-theme .menu-toggle-icon {
+  color: #fff !important;
+  background: linear-gradient(180deg, #050c1c, #081529);
+}
+
+.light-theme button[aria-label="Ouvrir le menu"] svg,
+.light-theme button[aria-label="Fermer le menu"] svg {
+  color: white;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+/* Style pour le container du toggle */
+.light-theme .menu-toggle-container {
+  background: linear-gradient(180deg, #050c1c, #081529);
+  border-radius: 0.375rem;
+  padding: 0.25rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour la section Services en mode clair */
+.light-theme .services-section {
+  position: relative;
+  background: transparent;
+}
+
+.light-theme .services-gradient {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 253, 244, 0.85), rgba(209, 250, 229, 0.9));
+  opacity: 1;
+}
+
+.light-theme .services-light-1 {
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.15), transparent);
+  width: 50%;
+  height: 50%;
+  top: 5%;
+  right: 5%;
+  border-radius: 100%;
+  filter: blur(90px);
+}
+
+.light-theme .services-light-2 {
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.12), transparent);
+  width: 60%;
+  height: 60%;
+  bottom: 5%;
+  left: 5%;
+  border-radius: 100%;
+  filter: blur(100px);
+}
+
+/* Styles pour les textes dans la section Services en mode clair */
+.light-theme .services-section .text-blue-500 {
+  color: var(--hero-light-accent);
+  font-weight: 600;
+}
+
+.light-theme .services-section .bg-gradient-to-r {
+  background: linear-gradient(135deg, var(--hero-light-accent), var(--hero-light-accent-dark));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.light-theme .services-section .text-gray-300 {
+  color: var(--hero-light-text);
+  opacity: 0.9;
+}
+
+/* Styles pour les feature cards dans la section Services en mode clair */
+.light-theme .services-section .bg-gradient-to-b {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(240, 253, 244, 0.8));
+  border: 1px solid var(--hero-light-border);
+  box-shadow: 0 8px 20px -4px rgba(20, 184, 166, 0.15);
+}
+
+.light-theme .services-section .bg-gradient-to-br {
+  background: linear-gradient(to bottom right, var(--hero-light-accent), var(--hero-light-accent-dark));
+}
+
+.light-theme .services-section .from-blue-600,
+.light-theme .services-section .to-indigo-600 {
+  --tw-gradient-from: var(--hero-light-accent);
+  --tw-gradient-to: var(--hero-light-accent-dark);
+}
+
+.light-theme .services-section .shadow-blue-600\/20 {
+  box-shadow: 0 8px 24px -6px rgba(20, 184, 166, 0.2);
+}
+
+/* Styles pour les textes dans les cartes en mode clair */
+.light-theme .services-section .text-white {
+  color: var(--hero-light-text);
+}
+
+.light-theme .services-section .text-gray-300 {
+  color: var(--hero-light-text-secondary);
+}

@@ -1,0 +1,216 @@
+/* Thème clair - Couleurs et variables */
+.light-theme {
+  --bg-primary: #f0fdf4;
+  --bg-secondary: #dcfce7;
+  --bg-tertiary: #bbf7d0;
+  --text-primary: #064e3b;
+  --text-secondary: #065f46;
+  --text-tertiary: #047857;
+  --border-color: #6ee7b7;
+  --accent-blue: #10b981;
+  --accent-green: #059669;
+  
+  /* Dégradés verts pour mode clair */
+  --gradient-light-primary: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  --gradient-light-secondary: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  --gradient-light-accent: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  
+  /* Nouvelle palette verte et blanche */
+  --modern-light-primary: #f0fdf4;
+  --modern-light-secondary: #dcfce7;
+  --modern-light-tertiary: #bbf7d0;
+  --modern-light-accent: #10b981;
+  --modern-light-accent-dark: #059669;
+  --modern-light-accent-light: #34d399;
+  --modern-light-border: #6ee7b7;
+  --modern-light-bg-card: rgba(240, 253, 244, 0.7);
+  --modern-light-bg-card-hover: rgba(220, 252, 231, 0.85);
+  --modern-light-text: #064e3b;
+  --modern-light-text-secondary: #065f46;
+  --modern-light-text-tertiary: #047857;
+  --modern-light-card-shadow: 0 8px 20px -4px rgba(5, 150, 105, 0.15);
+  
+  /* Nouveaux dégradés verts pour le Hero */
+  --gradient-hero-green-white: linear-gradient(135deg, #ffffff 0%, #f0fdf4 50%, #dcfce7 100%);
+  --gradient-hero-accents: linear-gradient(135deg, #14b8a6 0%, #0d9488 50%, #0f766e 100%);
+  --gradient-hero-buttons: linear-gradient(to right, #0d9488, #0f766e);
+  --gradient-hero-buttons-hover: linear-gradient(to right, #0f766e, #0d9488);
+  
+  /* Nouvelles couleurs teal/vert */
+  --hero-light-accent: #14b8a6;       /* teal-500 */
+  --hero-light-accent-dark: #0d9488;  /* teal-600 */
+  --hero-light-border: #2dd4bf;       /* teal-400 */
+  --hero-light-text: #134e4a;         /* teal-900 */
+  --hero-light-bg: #f0fdfa;           /* teal-50 */
+}
+
+/* Fond général du site en thème clair */
+.light-theme body {
+  background: var(--gradient-light-primary);
+  color: var(--text-primary);
+}
+
+/* Styles pour les éléments UI en mode clair */
+.light-theme .bg-dark-800 {
+  background: var(--gradient-light-secondary);
+}
+
+.light-theme .bg-dark-700 {
+  background: var(--gradient-light-secondary);
+}
+
+.light-theme .bg-dark-900 {
+  background: var(--gradient-light-primary);
+}
+
+.light-theme .bg-dark-950 {
+  background: var(--gradient-light-secondary);
+}
+
+.light-theme main {
+  background: var(--gradient-light-primary);
+  color: var(--text-primary);
+}
+
+/* Styles de texte en mode clair */
+.light-theme .text-white {
+  color: var(--modern-light-text);
+}
+
+.light-theme .text-gray-300 {
+  color: var(--modern-light-text-secondary);
+}
+
+/* Styles pour les couleurs d'accent et boutons */
+.light-theme .bg-accent-blue {
+  background: var(--gradient-light-accent);
+}
+
+.light-theme .text-accent-blue:not(nav .text-accent-blue):not(.navbar-logo .text-accent-blue) {
+  color: var(--modern-light-accent);
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  font-weight: 600;
+}
+
+.light-theme .text-accent-red {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+/* Ombres en mode clair */
+.light-theme .shadow-xl {
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.05);
+}
+
+/* Styles spécifiques pour la barre de navigation en mode clair */
+.light-theme .bg-dark-800,
+.light-theme .bg-dark-800\/95,
+.light-theme .bg-dark-800\/80 {
+  background: var(--gradient-light-primary);
+  backdrop-filter: blur(var(--glass-blur));
+}
+
+.light-theme nav .text-white,
+.light-theme nav .text-white\/90 {
+  color: var(--modern-light-text);
+}
+
+.light-theme nav .text-gray-300 {
+  color: var(--modern-light-text-secondary);
+}
+
+/* Style du menu burger en vert */
+.light-theme .mobile-menu {
+  background: var(--gradient-light-primary);
+  border: 1px solid var(--modern-light-border);
+  box-shadow: var(--modern-light-card-shadow);
+}
+
+.light-theme .mobile-menu-item {
+  background: rgba(236, 253, 245, 0.7);
+  margin-bottom: 0.5rem;
+  border-radius: 0.375rem;
+  border-left: 2px solid rgba(16, 185, 129, 0.3);
+  transition: all 0.2s ease;
+}
+
+.light-theme .mobile-menu-item:hover {
+  background: rgba(209, 250, 229, 0.7);
+  border-left: 2px solid rgba(16, 185, 129, 0.8);
+  transform: translateX(3px);
+}
+
+/* Force navbar transparente en mode clair */
+.light-theme nav {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.light-theme .bg-gradient-navbar {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(16, 185, 129, 0.15);
+  box-shadow: none !important;
+}
+
+/* Styles pour le Hero en mode clair */
+.light-theme .hero-section {
+  position: relative;
+  background: transparent;
+}
+
+.light-theme .hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 253, 244, 0.85), rgba(209, 250, 229, 0.9));
+  z-index: 0;
+}
+
+.light-theme .hero-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to top, rgba(240, 253, 250, 0.6), transparent);
+  z-index: 0;
+}
+
+/* Titre du Hero en mode clair */
+.light-theme .hero-title {
+  background: linear-gradient(135deg, #059669, #10b981, #34d399);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 2px 10px rgba(5, 150, 105, 0.1);
+}
+
+/* Service disponible texte */
+.light-theme .hero-section .service-available {
+  color: var(--hero-light-accent-dark);
+  font-weight: 600;
+  background: linear-gradient(90deg, var(--hero-light-accent), var(--hero-light-accent-dark));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Boutons en mode clair */
+.light-theme button:not(nav button):not(.mobile-menu button) {
+  background: var(--gradient-light-accent);
+  color: white;
+  border-color: var(--modern-light-accent-dark);
+}
+
+.light-theme button:not(nav button):not(.mobile-menu button):hover {
+  background: linear-gradient(to right, var(--modern-light-accent-dark), var(--modern-light-accent));
+  border-color: var(--modern-light-accent);
+}
+
+/* Animation pour le thème clair */
+.light-theme .transition-theme {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+} 

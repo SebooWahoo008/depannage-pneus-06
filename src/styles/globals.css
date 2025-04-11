@@ -1,0 +1,183 @@
+/* Styles pour le menu mobile en mode sombre */
+.mobile-menu-dark {
+  background: rgba(0, 0, 0, 0.15) !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  opacity: 0.95 !important;
+}
+
+/* Styles pour la transparence avec flou de la navbar en mode sombre */
+.dark-theme nav,
+.dark-theme nav > div {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  background-image: none !important;
+  opacity: 0.95 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Styles pour la transparence avec flou de la navbar en mode clair */
+.light-theme nav,
+.light-theme nav > div {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05) !important;
+  background-image: none !important;
+  opacity: 0.95 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Augmenter l'opacité des textes pour qu'ils restent lisibles */
+.dark-theme nav span,
+.dark-theme nav a,
+.dark-theme .nav-text {
+  opacity: 1 !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.light-theme nav span,
+.light-theme nav a,
+.light-theme .nav-text {
+  opacity: 1 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Styles pour les boutons de la navbar */
+.dark-theme .nav-button {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.dark-theme .nav-button:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  transform: translateY(-1px) !important;
+}
+
+.light-theme .nav-button {
+  background: rgba(0, 0, 0, 0.05) !important;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s ease !important;
+}
+
+.light-theme .nav-button:hover {
+  background: rgba(0, 0, 0, 0.1) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Masquer les fonds en mode sombre */
+.dark-theme nav::before,
+.dark-theme nav::after,
+.dark-theme .nav-background {
+  display: none !important;
+  opacity: 0 !important;
+  background: transparent !important;
+}
+
+/* Assurer la visibilité du hero sous la navbar transparente */
+.dark-theme section:first-of-type,
+.light-theme section:first-of-type {
+  z-index: 0;
+  position: relative;
+}
+
+.dark-theme nav,
+.light-theme nav {
+  z-index: 999 !important;
+  position: fixed !important;
+}
+
+/* Styles pour le bouton de menu hamburger - applicable aux deux thèmes */
+.menu-toggle-button {
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  transition: all 0.3s ease;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Supprimer tout style spécifique au thème sombre qui ajoute un fond ou une bordure */
+.dark-theme .menu-toggle-button,
+.light-theme .menu-toggle-button {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+/* Supprimer également les effets de survol qui ajouteraient un fond ou une bordure */
+.dark-theme .menu-toggle-button:hover,
+.light-theme .menu-toggle-button:hover {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  transform: none; /* Empêcher l'animation de scale au survol */
+}
+
+/* Styles pour les lignes du menu hamburger */
+.menu-toggle-button span,
+.dark-theme .menu-toggle-button span,
+.light-theme .menu-toggle-button span {
+  transform-origin: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: none !important;
+  height: 2px !important;
+}
+
+/* Supprimer les ombres au survol des lignes */
+.dark-theme .menu-toggle-button:hover span,
+.light-theme .menu-toggle-button:hover span {
+  box-shadow: none !important;
+}
+
+/* Supprimer spécifiquement les styles qui pourraient être appliqués par d'autres règles */
+.dark-theme .nav-logo,
+.dark-theme .menu-toggle-button {
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Styles pour l'icône cubique du thème */
+.theme-icon-cubic {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+/* Style pour l'icône cubique en mode sombre */
+.theme-icon-cubic-dark {
+  background: #1e293b;
+  box-shadow: 0 0 10px rgba(30, 41, 59, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Style pour l'icône cubique en mode clair */
+.theme-icon-cubic-light {
+  background: #f8fafc;
+  box-shadow: 0 0 10px rgba(248, 250, 252, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Animation au survol */
+.theme-icon-cubic:hover {
+  transform: translateY(-2px) rotateX(5deg) rotateY(5deg);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation au clic */
+.theme-icon-cubic:active {
+  transform: scale(0.95);
+} 

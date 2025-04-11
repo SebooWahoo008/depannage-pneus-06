@@ -1,0 +1,39 @@
+User-agent: *
+Allow: /
+
+# Optimisation du taux de crawl
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://depannage-pneus-06.fr/sitemap.xml
+
+# Optimisation pour les robots
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*?*
+
+# Règles spécifiques pour Google
+User-agent: Googlebot
+Allow: /
+Allow: /sitemap.xml
+Crawl-delay: 0.5
+
+# Règles spécifiques pour Bing
+User-agent: Bingbot
+Allow: /
+Allow: /sitemap.xml
+Crawl-delay: 1
+
+# Règles spécifiques pour Yahoo
+User-agent: Slurp
+Allow: /
+Allow: /sitemap.xml
+Crawl-delay: 1
+
+# Règles spécifiques pour Yandex
+User-agent: Yandex
+Allow: /
+Allow: /sitemap.xml
+Crawl-delay: 1 

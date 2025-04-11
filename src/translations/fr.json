@@ -1,0 +1,198 @@
+{
+  "hero": {
+    "title": "Spécialiste Pneumatiques",
+    "subtitle": "Service disponible 24h/24 et 7j/7 pour tous types de véhicules",
+    "callButton": "Appeler : 07 44 47 44 44",
+    "dimensionsButton": "Nos dimensions",
+    "selectionButton": "Notre sélection",
+    "emergencyTitle": "Numéro d'urgence",
+    "callNowButton": "Appeler maintenant",
+    "closeButton": "Fermer"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Découvrez nos services de qualité",
+    "learnMore": "En savoir plus",
+    "close": "Fermer",
+    "items": {
+      "1": {
+        "title": "Qualité Garantie",
+        "description": "Tous nos pneus sont soigneusement sélectionnés parmi les meilleures marques du marché.",
+        "details": "Chez Dépannage Pneus 06, nous ne compromettons jamais sur la qualité. Tous nos pneus proviennent de fabricants réputés comme Michelin, Bridgestone, Continental, Pirelli et d'autres marques premium. Nous vérifions chaque produit pour nous assurer qu'il répond à nos normes élevées avant de le proposer à nos clients. Notre engagement envers la qualité signifie que vous pouvez avoir l'esprit tranquille en sachant que vos nouveaux pneus sont sûrs, durables et performants."
+      },
+      "2": {
+        "title": "Livraison Rapide",
+        "description": "Livraison sous 48h pour l'ensemble de nos produits disponibles en stock.",
+        "details": "Notre service de livraison rapide garantit que vos pneus arrivent dans un délai maximum de 48 heures pour tous les produits en stock. Nous comprenons que le temps est précieux, surtout lorsqu'il s'agit de remplacer des pneus usés ou endommagés. Notre réseau logistique efficace couvre l'ensemble du département des Alpes-Maritimes, avec des options de livraison express disponibles pour les situations d'urgence. Nous vous tenons informé du statut de votre commande à chaque étape du processus."
+      },
+      "3": {
+        "title": "Service Rapide",
+        "description": "Nos techniciens qualifiés assurent un montage rapide et efficace de vos pneus.",
+        "details": "Notre équipe de techniciens certifiés travaille avec précision et efficacité pour vous faire gagner du temps. Nous savons que votre véhicule est essentiel à votre quotidien, c'est pourquoi nous nous efforçons de minimiser les temps d'attente. Pour la plupart des services standard, nous garantissons un temps d'exécution de moins de 30 minutes. Nos techniciens sont formés aux dernières techniques et technologies, ce qui leur permet d'effectuer des montages et équilibrages avec une grande rapidité tout en maintenant une qualité irréprochable."
+      },
+      "4": {
+        "title": "Installation Professionnelle",
+        "description": "Équilibrage et montage réalisés avec du matériel de pointe par nos experts.",
+        "details": "Notre service d'installation professionnelle est réalisé par des techniciens expérimentés utilisant des équipements de dernière génération. Nous effectuons un montage précis et un équilibrage parfait de vos pneus pour garantir une tenue de route optimale et une usure uniforme. Nos machines d'équilibrage informatisées détectent même les plus petits déséquilibres qui pourraient affecter le confort de conduite. Après chaque installation, nous procédons à une vérification complète et ajustons précisément la pression des pneus selon les recommandations du constructeur."
+      },
+      "5": {
+        "title": "Garantie Complète",
+        "description": "Tous nos produits et services sont couverts par une garantie constructeur.",
+        "details": "Nous offrons une garantie complète sur tous nos produits et services. Nos pneus sont couverts par la garantie du fabricant contre les défauts de fabrication, généralement pour une période de 5 à 6 ans à partir de la date d'achat. De plus, notre propre garantie de service vous protège pendant 30 jours après l'installation. Si vous rencontrez un problème lié à notre travail pendant cette période, nous le corrigerons gratuitement. Pour certains pneus premium, nous proposons également une garantie contre les dommages routiers qui couvre les réparations ou remplacements en cas de crevaison ou de dommage accidentel."
+      },
+      "6": {
+        "title": "Prix Compétitifs",
+        "description": "Nous vous proposons les meilleurs tarifs grâce à nos partenariats avec les plus grands fabricants.",
+        "details": "Notre politique de prix compétitifs est rendue possible grâce à nos relations directes avec les fabricants et distributeurs de pneus. En tant que partenaire privilégié des plus grandes marques, nous bénéficions de tarifs préférentiels que nous répercutons sur nos clients. Nous surveillons régulièrement le marché pour nous assurer que nos prix restent parmi les plus attractifs de la région. Si vous trouvez un prix inférieur pour un produit identique, nous nous efforçons de l'égaler ou de le battre. Nous proposons également des offres saisonnières et des promotions spéciales tout au long de l'année."
+      }
+    }
+  },
+  "pneusDetails": {
+    "title": "Nos Pneus et Services",
+    "description": "Chez Dépannage Pneus 06, nous proposons une large gamme de pneumatiques pour tous types de véhicules, des voitures particulières aux utilitaires. Nous sélectionnons avec soin chaque pneu pour vous offrir un excellent rapport qualité-prix.",
+    "tabs": {
+      "presentation": "Présentation",
+      "products": "Notre Sélection",
+      "dimensions": "Dimensions",
+      "services": "Services"
+    },
+    "categories": {
+      "all": "Tous",
+      "summer": "Pneus Été",
+      "winter": "Pneus Hiver",
+      "allSeason": "Pneus 4 Saisons",
+      "suv": "SUV/4x4"
+    },
+    "products": {
+      "michelin": {
+        "name": "Michelin Primacy 4",
+        "description": "Excellence en tenue de route et longévité. Performance optimale sur sol sec et mouillé."
+      },
+      "bridgestone": {
+        "name": "Bridgestone Blizzak LM005",
+        "description": "Adhérence exceptionnelle sur neige et glace. Confort et sécurité en conditions hivernales."
+      },
+      "continental": {
+        "name": "Continental AllSeasonContact",
+        "description": "Performance équilibrée toute l'année. Idéal pour les climats tempérés et variables."
+      },
+      "pirelli": {
+        "name": "Pirelli Scorpion Verde",
+        "description": "Spécialement conçu pour les SUV et 4x4. Alliant performance et respect de l'environnement."
+      },
+      "goodyear": {
+        "name": "Goodyear Vector 4Seasons Gen-3",
+        "description": "Technologie innovante pour toutes les saisons. Performance constante toute l'année."
+      },
+      "hankook": {
+        "name": "Hankook Ventus Prime3",
+        "description": "Excellent rapport qualité-prix. Confort de conduite et faible niveau sonore."
+      }
+    },
+    "pagination": {
+      "previous": "Précédent",
+      "next": "Suivant",
+      "page": "Page",
+      "of": "sur"
+    },
+    "product": {
+      "price": "Prix",
+      "currency": "€",
+      "viewDetails": "Voir détails",
+      "addToCart": "Ajouter au panier",
+      "notAvailable": "Non disponible",
+      "loading": "Chargement..."
+    },
+    "tireSizes": {
+      "passenger": {
+        "title": "Véhicules particuliers"
+      },
+      "suv": {
+        "title": "SUV et 4x4"
+      },
+      "commercial": {
+        "title": "Utilitaires"
+      }
+    },
+    "services": {
+      "mounting": {
+        "title": "Montage & Équilibrage",
+        "description": "Notre équipe procède au montage et à l'équilibrage précis de vos pneus, garantissant confort de conduite et sécurité optimale."
+      },
+      "alignment": {
+        "title": "Parallélisme",
+        "description": "Un réglage précis de la géométrie de vos roues pour une tenue de route parfaite et une usure homogène de vos pneumatiques."
+      },
+      "mobile": {
+        "title": "Service Mobile",
+        "description": "Notre équipe se déplace chez vous ou sur votre lieu de travail pour changer vos pneus avec notre atelier mobile entièrement équipé."
+      },
+      "emergency": {
+        "title": "Assistance 24/7",
+        "description": "Un pneu crevé en pleine nuit ? Notre service d'urgence est disponible 24h/24 et 7j/7 pour vous dépanner rapidement."
+      }
+    },
+    "servicesSection": {
+      "title": "Nos Services Professionnels"
+    },
+    "dimensions": {
+      "title": "Dimensions Disponibles",
+      "description": "Nous disposons d'un large stock de pneus dans toutes les dimensions standards. Si vous ne trouvez pas votre taille, n'hésitez pas à nous contacter pour une commande spéciale.",
+      "emergencyService": "Service d'urgence : 07 44 47 44 44"
+    },
+    "presentation": {
+      "title": "Spécialiste en pneumatiques depuis 15 ans",
+      "paragraph1": "Chez Dépannage Pneus 06, nous sommes passionés par votre sécurité sur la route. Notre équipe de professionnels qualifiés s'engage à vous fournir les meilleurs services de pneumatiques dans la région.",
+      "paragraph2": "Que vous ayez besoin de pneus été, hiver ou toutes saisons, nous avons ce qu'il vous faut. Notre expertise s'étend des véhicules particuliers aux utilitaires, en passant par les SUV et 4x4.",
+      "paragraph3": "Nous travaillons avec les plus grandes marques du marché pour vous offrir un large choix de pneus adaptés à tous les budgets et à tous les besoins.",
+      "rating": "4.9/5 - 500+ avis clients",
+      "phoneAction": "Contactez-nous",
+      "imageAlt": "Atelier de pneumatiques Dépannage Pneus 06"
+    }
+  },
+  "footer": {
+    "about": "À propos",
+    "aboutDescription": "Dépannage Pneus 06 est votre spécialiste de pneumatiques à Nice. Nous offrons un service mobile 24h/24 et 7j/7 pour tous types de véhicules.",
+    "quickLinks": "Liens rapides",
+    "ourProducts": "Nos produits",
+    "availableDimensions": "Dimensions disponibles",
+    "contact": "Contact",
+    "ourServices": "Nos services",
+    "tireSales": "Vente de pneus",
+    "homeMounting": "Montage à domicile",
+    "repair": "Réparation",
+    "balancing": "Équilibrage",
+    "emergencyService": "Dépannage d'urgence",
+    "serviceAvailable": "Service disponible 24h/24",
+    "mobileService": "Service mobile dans tout le département",
+    "scrollToTop": "Remonter en haut",
+    "copyright": "Dépannage Pneus 06. Tous droits réservés."
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Besoin d'aide ou de renseignements sur nos services ? N'hésitez pas à nous contacter !",
+    "infoTitle": "Informations de contact",
+    "phone": "Téléphone",
+    "available247": "Disponible 24/7",
+    "instantMessaging": "Messagerie instantanée",
+    "location": "Localisation",
+    "mobileService": "Service mobile dans tout le département",
+    "emailResponseTime": "Réponse sous 24h",
+    "mapTitle": "Carte de Nice"
+  },
+  "navbar": {
+    "home": "Accueil",
+    "ourTires": "Nos Pneus",
+    "servicesAndDimensions": "Services & Dimensions",
+    "followUs": "Suivez-nous",
+    "lightMode": "Passer au mode clair",
+    "darkMode": "Passer au mode sombre",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "mobileMenu": {
+      "language": "Langue",
+      "darkMode": "Mode Sombre",
+      "lightMode": "Mode Clair"
+    }
+  }
+} 
