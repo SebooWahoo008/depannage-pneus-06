@@ -5,7 +5,7 @@ Allow: /
 Crawl-delay: 1
 
 # Sitemap
-Sitemap: https://depannage-pneus-06.fr/sitemap.xml
+Sitemap: https://seboowahoo008.github.io/depannage-pneus-06/sitemap.xml
 
 # Optimisation pour les robots
 Disallow: /api/
@@ -36,4 +36,9 @@ Crawl-delay: 1
 User-agent: Yandex
 Allow: /
 Allow: /sitemap.xml
-Crawl-delay: 1 
+Crawl-delay: 1
+
+# Règles spécifiques pour les robots spécifiques
+Disallow: /admin/
+Disallow: /admin/products-generator/
+Disallow: /_next/ 
