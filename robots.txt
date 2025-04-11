@@ -1,30 +1,37 @@
 User-agent: *
 Allow: /
 
-# Optimisation du taux de crawl
-Crawl-delay: 1
+# Bloquer les pages d'administration
+Disallow: /admin/
+Disallow: /admin/products-generator/
+
+# Bloquer les fichiers build
+Disallow: /_next/static/chunks/
+Allow: /_next/static/images/
+Allow: /_next/static/css/
+Allow: /_next/static/media/
+Allow: /_next/image
+
+# Fichiers spéciaux
+Allow: /sitemap.xml
+Allow: /favicon.ico
+Allow: /manifest.json
 
 # Sitemap
 Sitemap: https://seboowahoo008.github.io/depannage-pneus-06/sitemap.xml
 
 # Optimisation pour les robots
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /*.json$
-Disallow: /*?*
+Crawl-delay: 1
 
-# Règles spécifiques pour Google
+# Instruction spéciale pour Google
 User-agent: Googlebot
 Allow: /
-Allow: /sitemap.xml
 Crawl-delay: 0.5
 
-# Règles spécifiques pour Bing
+# Instruction spéciale pour Bing
 User-agent: Bingbot
 Allow: /
-Allow: /sitemap.xml
-Crawl-delay: 1
+Crawl-delay: 0.5
 
 # Règles spécifiques pour Yahoo
 User-agent: Slurp
@@ -41,4 +48,5 @@ Crawl-delay: 1
 # Règles spécifiques pour les robots spécifiques
 Disallow: /admin/
 Disallow: /admin/products-generator/
-Disallow: /_next/ 
+Disallow: /*.json$
+Disallow: /*?* 
